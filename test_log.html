@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arduino Test Log</title>
+<meta http-equiv="refresh" content="5">
+<style>
+body { font-family: Arial, sans-serif; background:#f9f9f9; color:#333; padding:20px; }
+h1 { color:#444; }
+.log-entry { padding:6px; margin:4px 0; border-radius:4px; }
+.ok { background:#e0f7e9; color:#256029; }
+.fail { background:#ffe0e0; color:#a30000; }
+.info { background:#e7f3fe; color:#084298; }
+.time { font-size:0.9em; color:#555; }
+</style>
+</head>
+<body>
+<h1>🔌 Arduino Test Log</h1>
+<div id="log">
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:05]</span> 🔌 Monitoring COM18...</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:05]</span> 🕒 Log started at 2025-07-23 16:18:05</div>
+<div class="log-entry ok"><span class="time">[2025-07-23 16:18:17]</span> ✅ COM18 opened, waiting for boot...</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: BOOT: Arduino starting...</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: BOOT: Hardware init OK</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: BOOT: Firmware v1.0 ready</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: LED=1</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: LED=0</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:19]</span> RX: LED=1</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:20]</span> RX: LED=0</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:20]</span> RX: LED=1</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:21]</span> RX: LED=0</div>
+<div class="log-entry ok"><span class="time">[2025-07-23 16:18:21]</span> ✅ Boot prints: PASS</div>
+<div class="log-entry fail"><span class="time">[2025-07-23 16:18:21]</span> ❌ LED blink test FAILED.</div>
+<div class="log-entry info"><span class="time">[2025-07-23 16:18:21]</span> 🛑 Test execution stopped due to failure.</div>
+</div></body></html>
